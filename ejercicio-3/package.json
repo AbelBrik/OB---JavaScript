@@ -1,0 +1,13 @@
+{
+  "name": "ejercicio-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start1": "node factorial-for.js",
+    "start2": "node factorial-while.js",
+    "start3": "node factorial-break.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
