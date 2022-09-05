@@ -1,10 +1,10 @@
-let name = "Pepito";
-let surname = "Gargollo";
+let name = "Pe pito";
+let surname = "Garg ollo";
 let student = `${name} ${surname}`;
 let studentMayus = student.toUpperCase();
 let studentMinus = student.toLowerCase();
 let numbLetters = student.length
 let initialName = name[0];
 let lastSurname = surname[surname.length - 1];
-let withoutSpaces = student.replace(" ", "");
+let withoutSpaces = student.replace(/ /g, "");
 let contentName = student.includes(name);
