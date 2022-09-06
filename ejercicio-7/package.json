@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start1": "node conjuntos.js",
+    "start2": "node objetos.js",
+    "start3": "node fechas.js"
   },
   "author": "",
   "license": "ISC"

@@ -1,0 +1,1 @@
+// const age =  Number(prompt("¿Cuál es tu edad?"));
