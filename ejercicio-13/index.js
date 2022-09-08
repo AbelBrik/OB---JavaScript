@@ -1,0 +1,10 @@
+const name = "Pe pito"
+const surname = "Garg ollo"
+const student = `${name} ${surname}`
+const studentMayus = student.toUpperCase()
+const studentMinus = student.toLowerCase()
+const numbconstters = student.length
+const initialName = name[0]
+const lastSurname = surname[surname.length - 1]
+const withoutSpaces = student.replace(/ /g, "")
+const contentName = student.includes(name)
