@@ -1,6 +1,4 @@
-# .DS_store
+.DS_store
 node_modules
 *.txt
 .env
-.gitignore
-package-lock.json
