@@ -3,3 +3,4 @@ node_modules
 *.txt
 .env
 .gitignore
+package-lock.json
