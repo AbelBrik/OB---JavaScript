@@ -1,19 +1,21 @@
-const tasks = document.querySelectorAll("p")
-const lists = document.querySelectorAll("section")
-const trash = document.querySelector("svg")
-
-tasks.forEach(task => {
-    task.addEventListener("dragstart", e => {
-        task.classList.add("dragging")
-        e.dataTransfer.setData("id", task.id)
+function initMap() {
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 4.1,
+        center: { lat: -25.344, lng: 131.031 },
+    });
+    const marker = new google.maps.Marker({
+        position: { lat: -25.344, lng: 131.031 },
+        map,
+        title: "Posición 1"
     })
-    task.addEventListener("dragend", () => task.classList.remove("dragging"))
-});
-
-lists.forEach(list => {
-    list.addEventListener("dragover", e => e.preventDefault())
-    list.addEventListener("drop", e => list.appendChild(document.getElementById(e.dataTransfer.getData("id"))))
-});
-
-trash.addEventListener("dragover", e => e.preventDefault())
-trash.addEventListener("drop", e => document.getElementById(e.dataTransfer.getData("id")).remove())
+    const marker2 = new google.maps.Marker({
+        position: { lat: -20.344, lng: 121.031 },
+        map,
+        title: "Posición 2"
+    })
+    const marker3 = new google.maps.Marker({
+        position: { lat: -35.344, lng: 150.031 },
+        map,
+        title: "Posición 3"
+    })
+}
